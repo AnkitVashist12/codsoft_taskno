@@ -1,49 +1,121 @@
+/* General styles */
 body {
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header styles */
+header {
+  background-color: #9e068f;
+  color: white;
+  padding: 1rem;
+}
+
+nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 100vh;
-  background-color: #f0f0f0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li {
   margin: 0;
 }
 
-.calculator {
-  background-color: #333;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.display {
-  background-color: #222;
-  color: white;
-  font-size: 2rem;
-  padding: 10px;
-  text-align: right;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  min-height: 50px;
-}
-
-.buttons {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-}
-
-.button {
-  background-color: #444;
-  color: white;
-  font-size: 1.5rem;
-  padding: 20px;
+/* Hero section styles */
+.hero {
+  background-color: #f9f6f8;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
 }
 
-.button:hover {
-  background-color: #555;
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+/* Features section styles */
+.features {
+  background-color: #e376d5;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.features-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.feature-box {
+  background-color: #d540b5;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 200px;
+}
+
+/* About section styles */
+.about {
+  background-color: #b9078f;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Footer styles */
+footer {
+  background-color: #53043f;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: auto;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+}
+
+.social-links li {
+  margin: 0;
 }
